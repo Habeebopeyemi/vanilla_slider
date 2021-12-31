@@ -13,6 +13,14 @@ if (mobile_view.matches) {
     move_per_click = 50.36;
     max_move = 403;
 }
+
+// small screen
+let small_view = window.matchMedia("(max-width: 384px)")
+if (small_view.matches) {
+    move_per_click = 101.96;
+    max_move = 918;
+}
+
 let forward_movement = () => {
     length = length + move_per_click;
     if (product == 1) {
